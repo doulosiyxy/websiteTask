@@ -2,12 +2,16 @@ a:hover, button:hover, li:hover, .close, input:hover, select:hover {
     cursor: pointer;
 }
 
-a, button, input[type="submit"]{
+a, button, input[type="submit"], .img{
   transition: .2s ease;
 }
 
 a:hover, button:hover, input[type="submit"]:hover {
   opacity: 0.8;
+}
+
+a[style]:hover {
+    transform: scale(1.02);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
