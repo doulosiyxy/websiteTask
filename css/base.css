@@ -20,7 +20,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 *:focus {
-  outline: 1px solid white;
+    opacity: 0.8;
+  outline: none;
 }
 
 input:focus::placeholder {
