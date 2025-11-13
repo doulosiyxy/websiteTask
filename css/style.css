@@ -192,7 +192,8 @@ ul a img, .dropdown-img {
 }
 
 .submenu {
-    margin-top: 1.5rem;
+    width: 25rem;
+    margin-top: 1.6rem;
     display: none;
     flex-direction: column;
     gap: .1rem;
@@ -200,7 +201,7 @@ ul a img, .dropdown-img {
     background: var(--dark);
     z-index: 1;
     border: 1px solid var(--gold);
-    padding: var(--padding);
+    padding: .5rem;
 }
 
 .submenu li {
