@@ -333,9 +333,13 @@ section {
     margin-bottom: 5.4rem;
 }
 
+.explore-titles h2 {
+    margin-bottom: 4rem;
+}
+
 .explore-titles .description {
     text-align: center;
-    margin: 1.2rem auto;
+    margin: 1.4rem auto;
 }
 
 /* to accomplish this and scroll left a bit of js is required*/
