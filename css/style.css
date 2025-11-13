@@ -221,7 +221,7 @@ ul a img, .dropdown-img {
 
 section {
     width: 100%;
-    max-width: 144rem;
+    max-width: var(--site-width);
     margin: auto;
     margin-bottom: 12.25rem;
 }
@@ -452,7 +452,7 @@ div.explore-imgs:nth-of-type(1) a {
 
 .features {
     display: flex;
-    max-width: 144rem;
+    max-width: var(--site-width);
     gap: var(--spacing-lg);
 }
 
