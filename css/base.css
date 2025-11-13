@@ -1,0 +1,79 @@
+a:hover, button:hover, li:hover, .close, input:hover, select:hover {
+    cursor: pointer;
+}
+
+a, button, input[type="submit"]{
+  transition: .2s ease;
+}
+
+a:hover, button:hover, input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+*:focus {
+  outline: 1px solid white;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+    background: var(--dark);
+    border: 1px solid var(--gold);
+    color: var(--cream);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}

@@ -6,41 +6,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dakota | Homepage</title>
     <meta name="description" content="Dakota Hotels Homepage: Where Sophistication Come To Stay.">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/dakota.svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="fonts/gta-america-trial.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="fonts/GT-America/GT-America-Extended-Light-Trial.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="fonts/GT-America/GT-America-Extended-Regular-Trial.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="fonts/GT-America/GT-America-Extended-Thin-Trial.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="fonts/Newsreader/Newsreader-Italic-VariableFont_opsz,wght.ttf" as="font" type="font/woff2"
+        crossorigin>
 </head>
 
 <body>
     <header>
-        <div class="banner">
-
+        <div class="flex-between banner">
+            <span class="placeholder"></span>
+            <span>DISCOVER OUR LATEST HOTEL PACKAGES <a href="#">HERE</a></span>
+            <span class="close">&times;</span>
         </div>
-        <div>
-            <div></div>
-            <img src="" alt="">
-            <div></div>
-        </div>
+        <nav class="flex-between">
+            <div>
+                <ul>
+                    <li class="explore-dropdown dropdown">
+                        <a>EXPLORE OUR HOTELS
+                            <img src="img/dropdown.svg" alt="">
+                        </a>
+                        <ul class="explore-submenu submenu">
+                            <li><a href="#">MANCHESTER</a></li>
+                            <li><a href="#">LEEDS</a></li>
+                            <li><a href="#">EDINBURGH</a></li>
+                            <li><a href="#">GLASGOW</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">VOUCHERS</a></li>
+                </ul>
+            </div>
+            <a href="#"><img src="img/logo.svg" alt="dakota hotels logo"></a>
+            <div class="align-right">
+                <ul>
+                    <li class="grill-dropdown dropdown">
+                        <a>THE GRILL
+                            <img src="img/dropdown.svg" alt="">
+                        </a>
+                        <ul class="grill-submenu submenu">
+                            <li><a href="#">MANCHESTER</a></li>
+                            <li><a href="#">LEEDS</a></li>
+                            <li><a href="#">EDINBURGH</a></li>
+                            <li><a href="#">GLASGOW</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="book-room-btn">BOOK A ROOM</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="hero flex-align-center">
+                <div class="hero-titles flex-between flex-col">
+                    <p class="kicker">Step Inside Dakota</p>
+                    <h1 class="title">Where Sophistication <br> Comes to Stay</h1>
+                </div>
+            </div>
+            <div class="hero-form-wrapper">
+                <form action="#" id="availability-check" method="post">
+                    <label for="location">LOCATION
+                        <div class="select-wrapper">
+                            <select name="location" id="location" required>
+                                <option value="" disabled selected hidden>Select your hotel</option>
+                                <option value="manchester">Manchester</option>
+                                <option value="leeds">Leeds</option>
+                                <option value="edinburgh">Edinburgh</option>
+                                <option value="glasgow">Glasgow</option>
+                            </select>
+                            <img src="img/dropdown.svg" alt="">
+                        </div>
+                    </label>
+                    <label for="check-in">CHECK IN / CHECK OUT
+                        <div class="select-wrapper">
+                            <input type="text" name="check-in" id="check-in" placeholder="Add dates" required>
+                            <img src="img/dropdown.svg" alt="">
+                        </div>
+                    </label>
+                    <label for="guests">GUESTS
+                        <div class="select-wrapper">
+                            <input type="text" name="guests" id="guests" required placeholder="1 Room, 2 Guests">
+                        </div>
+                    </label>
+                    <label for="promo">GOT A PROMO CODE?
+                        <div class="select-wrapper">
+                            <input type="text" name="promo" id="promo" placeholder="Enter Code">
+                        </div>
+                    </label>
+                    <input type="submit" value="Check Availability">
+                </form>
+            </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="explore-section flex-col flex-center">
+            <div>
+                <div class="explore-titles flex-col flex-center">
+                    <p class="kicker">6 Hotels. One Luxury Experience.</p>
+                    <h2 class="title">Discover our Locations</h2>
+                </div>
+                <div class="explore-imgs flex-center ">
+                    <a href="#" style="--bg-url: url('../img/newcastle.jpg')">
+                        <h3 class="title">Newcastle</h3>
+                    </a>
+                    <a href="#" style="--bg-url: url('../img/manchester.jpg')">
+                        <h3 class="title">Manchester</h3>
+                    </a>
+                    <a href="#" style="--bg-url: url('../img/leeds.jpg')">
+                        <h3 class="title">Leeds</h3>
+                    </a>
+                    <a href="#" style="--bg-url: url('../img/edinburgh.jpg')">
+                        <h3 class="title">Edinburgh</h3>
+                    </a>
+                    <a href="#" style="--bg-url: url('../img/glasgow.png')">
+                        <h3 class="title">Glasgow</h3>
+                    </a>
+                    <a href="#" style="--bg-url: url('../img/europe.jpg')">
+                        <h3 class="title">Europe</h3>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="explore-titles">
+                    <h2 class="title">Bold Design.<br>Warm Hospitality.<br><span class="gold-text">Unmistakebly
+                            Dakota.</span></h2>
+                    <p class="description">Sophistication at its heart. Our newest hotel in Manchester combines style
+                        with impeccable
+                        service for a truly luxurious experience, as well as its largest, boldest penthouse suite.</p>
+                </div>
+                <div class="explore-btns flex-center">
+                    <a href="#" class="flex-align-center">DISCOVER ROOMS</a>
+                    <a href="#" class="flex-align-center">MAKE A RESERVATION</a>
+                </div>
+                <div class="explore-icon">
+                    <img src="img/arrow.svg" alt="">
+                    <img src="img/ellipse.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="explore-imgs flex-center">
+                    <a href="#" style="--bg-url: url('../img/rooms.jpg')"></a>
+                    <a href="#" style="--bg-url: url('../img/restaurants.jpg')"></a>
+                    <a href="#" style="--bg-url: url('../img/bar.jpg')"></a>
+                </div>
+                <div class="explore-links flex-center">
+                    <div>
+                        <h3 class="title">Sleep in Style</h3>
+                        <a href="">
+                            <p class="gold-text">DISCOVER OUR ROOMS</p>
+                            <img src="img/arrow_right.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="title">Dine at the Grill</h3>
+                        <a href="#">
+                            <p class="gold-text">EXPLORE OUR RESTAURANTS</p>
+                            <img src="img/arrow_right.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="title">Drink at the Bar</h3>
+                        <a href="#">
+                            <p class="gold-text">EXPLORE OUR BARS</p>
+                            <img src="img/arrow_right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features rooms">
+            <div class="img single" style="--bg-url: url('../img/room.png')"></div>
+            <div class="info flex-align-center flex-col">
+                <p class="kicker">Rest in Refined Luxury</p>
+                <h2 class="title">Rooms and Suites</h2>
+                <p class="description">Our rooms are a masterclass in understated elegance. Sink into crisp cotton
+                    sheets, enjoy rainfall showers, and take in details designed to make you feel truly at home — only
+                    better.</p>
+                <a href="#" class="btn flex-align-center">BOOK A ROOM</a>
+            </div>
+        </section>
+        <section class="features dine">
+            <div class="info flex-align-center flex-col">
+                <p class="kicker">Bold Flavours. Beautiful Spaces.</p>
+                <h2 class="title">Dine at The Grill</h2>
+                <p class="description">Our award-winning restaurants are the heart and soul of Dakota: our dedicated
+                    chefs are committed to delivering exceptional quality food, created with premium ingredients.</p>
+                <a href="#" class="btn flex-align-center">VIEW MENUS</a>
+            </div>
+            <div class="img-wrapper">
+                <div class="img double" style="--bg-url: url('../img/grill_2.jpg')"></div>
+                <div class="img double" style="--bg-url: url('../img/grill_1.jpg')"></div>
+            </div>
+        </section>
+        <section class="features bar">
+            <div class="img-wrapper">
+                <div class="img double" style="--bg-url: url('../img/bar_1.jpg')"></div>
+                <div class="img double" style="--bg-url: url('../img/bar_2.jpg')"></div>
+            </div>
+            <div class="info flex-align-center flex-col">
+                <p class="kicker">Meet, Socialise & Relax</p>
+                <h2 class="title">Drink at The Bar</h2>
+                <p class="description">Whether you’re here to meet over coffee, or to spend the evening sampling the
+                    best cocktails, you will relax in comfort, looked after by our friendly and knowledgeable team of
+                    beverage enthusiasts.</p>
+                <a href="#" class="btn flex-align-center">DISCOVER THE BAR</a>
+            </div>
+        </section>
+        <section class="slideshow">
+            <div style="--bg-url: url('../img/couple.jpg')">
+                <h2 class="title">DISCOVER DAKOTA</h2>
+                <div class="slideshow-nav flex-between">
+                    <p class="kicker">Signature Suite</p>
+                    <p class="indicator">7 &mdash; 24</p>
+                    <div class="nav-btns flex-align-center">
+                        <a href=""><img src="img/nav-left.svg" alt="previous image button" onclick=""></a>
+                        <a href=""><img src="img/nav-right.svg" alt="next image button" onclick=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features events">
+            <div class="info flex-align-center flex-col">
+                <p class="kicker">Where Business Meets Style</p>
+                <h2 class="title">Meetings<br> and Events</h2>
+                <p class="description">With stylish venues across our UK locations, we offer flexible spaces,
+                    professional service, and high-quality packages designed to make planning simple.</p>
+                <a href="#" class="btn flex-align-center">VIEW EVENT SPACES</a>
+            </div>
+            <div class="img single" style="--bg-url: url('../img/library.jpg')"></div>
+        </section>
+        <section class="offers">
+            <div>
+                <div class="explore-imgs offer-imgs flex-between">
+                    <a href="#" style="--bg-url: url('../img/packages.jpg')"></a>
+                    <a href="#" style="--bg-url: url('../img/vouchers.png')"></a>
+                    <a href="#" style="--bg-url: url('../img/festive.jpg')"></a>
+                </div>
+                <div class="explore-links offer-links flex-between">
+                    <div>
+                        <h3 class="title">PACKAGES</h3>
+                        <p class="description">Elevate your Dakota experience with one of our exclusive specials - only
+                            available when
+                            booking direct.</p>
+                        <a href="">
+                            <p class="gold-text">DISCOVER OUR PACKAGES</p>
+                            <img src="img/arrow_right.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="title">GIFT VOUCHERS</h3>
+                        <p class="description">Give the gift of luxury: whatever the occasion, celebrate with Dakota
+                            gift vouchers.</p>
+                        <a href="#">
+                            <p class="gold-text">BUY GIFT VOUCHERS</p>
+                            <img src="img/arrow_right.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="title">THE FESTIVE SEASON</h3>
+                        <p class="description">Eat, drink, and be merry with an unforgettable Christmas Break at Dakota
+                            Hotels this 2025.
+                        </p>
+                        <a href="#">
+                            <p class="gold-text">VIEW CHRISTMAS BREAKS</p>
+                            <img src="img/arrow_right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="booking_call">
+            <div class="flex-center">
+                <div class="flex-align-center flex-col img" style="--bg-url: url('../img/book_room.jpg')">
+                    <h2 class="title">BOOK A ROOM</h2>
+                    <a href="#" class="btn">BOOK A MANCHESTER ROOM</a>
+                </div>
+                <div class="flex-align-center flex-col img" style="--bg-url: url('../img/book_table.jpg')">
+                    <h2 class="title">BOOK A TABLE</h2>
+                    <a href="#" class="btn">BOOK A TABLE AT THE GRILL</a>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-
+        <div class="footer-wrapper flex-center">
+            <div>
+                <a href="#"><img src="img/logo.svg" alt="dakota hotels logo" class="logo"></a>
+            </div>
+            <div class="footer-links flex-left">
+                <div>
+                    <h3 class="gold-text">LOCATIONS</h3>
+                    <ul class="locations">
+                        <li><a href="#">Edinburgh</a></li>
+                        <li><a href="#">Eurocentral</a></li>
+                        <li><a href="#">Glasgow</a></li>
+                        <li><a href="#">Leeds</a></li>
+                        <li><a href="#">Manchester</a></li>
+                        <li><a href="#">Manchester Airport</a></li>
+                        <li><a href="#">Newcastle</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="gold-text">HOTEL</h3>
+                    <ul class="hotels">
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Gift Vouchers</a></li>
+                        <li><a href="#">Festive</a></li>
+                        <li><a href="#">Meetings & Events</a></li>
+                        <li><a href="#">Private Dining</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="gold-text">DAKOTA</h3>
+                    <ul class="dakota">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-base flex-between">
+            <p class="description">© 2025 Dakota Hotels | <a href="#">Site by 93FT</a></p>
+            <div class="flex-align-center socials">
+                <a href="#"><img src="img/instagram.svg" alt="instgram"></a>
+                <a href="#"><img src="img/x.svg" alt="x"></a>
+                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+            </div>
+            <p><a href="">Privacy Policy </a> | <a href="">Legals</a></p>
+        </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 
