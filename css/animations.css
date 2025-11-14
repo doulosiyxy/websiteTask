@@ -1,0 +1,75 @@
+#arrow-svg {
+    animation: reverse-reveal-animation linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 33%;
+    opacity: 0;
+    transform: translateY(0);
+}
+
+
+#ellipse-svg {
+    animation: appear-animation linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+    opacity: 0;
+}
+
+.explore-titles p, .explore-titles h2, .explore-btns, .info {
+    animation: reveal-animation linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+    opacity: 0;
+}
+
+.hero-titles .kicker, .hero-titles h1  {
+    animation: reveal-animation ease-in-out forwards;
+    animation-duration: 1.8s;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.hero-titles h1 {
+    animation-delay: 1s;
+}
+
+@keyframes reverse-reveal-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-animation {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse-animation {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
