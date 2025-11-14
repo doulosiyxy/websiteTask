@@ -11,7 +11,7 @@ a:hover, button:hover, input[type="submit"]:hover {
 }
 
 a[style]:hover {
-    transform: scale(1.02);
+    /*transform: scale(1.02);*/
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
